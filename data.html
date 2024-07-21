@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dusun Sangubanyu</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- loader -->
+	<div class="bg-loader">
+		<div class="loader"></div>
+	</div>
+
+	<!-- header -->
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="https://www.instagram.com/giat9_banyuwangi"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+			<h1><a href="index.html">UMKM DUSUN SANGUBANYU</a></h1>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li class="active"><a href="data.html">DATA</a></li>
+                <li><a href="visualisasi.html">VISUALISASI DATA</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!--label-->
+	<section class="label">
+		<div class="container">
+			<p>Home / Data</p>
+		</div>
+	</section>
+
+	<!-- data -->
+     <div class="container">
+    <h1>MONITORING USAHA MIKRO KECIL DAN MENENGAH DUSUN SANGUBANYU PERIODE JULI - AGUSTUS 2024</h1>
+    <input type="text" id="searchInput" placeholder="Cari UMKM..." onkeyup="searchTable()">
+        <table id="umkmTable">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama Pemilik</th>
+                <th>Nama Usaha</th>
+                <th>Jenis Usaha</th>
+                <th>Lokasi Usaha</th>
+                <th>Modal Usaha</th>
+                <th>Laba Bersih (per bulan)</th>
+                <th>Jumlah Karyawan</th>
+                <th>Status Legalitas</th>
+                <th>Digitalisasi</th>
+                <th>Koordinat Lokasi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nur Laeli</td>
+                <td>Warung Karomah</td>
+                <td>Perdagangan</td>
+                <td>Ruko</td>
+                <td>Rp15.000.000</td>
+                <td>Rp2.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.487737,110.194976</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kamsinah</td>
+                <td>Warung Kelontong</td>
+                <td>Sembako</td>
+                <td>Rumah</td>
+                <td>Rp6.000.000</td>
+                <td>Rp1.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Belum</td>
+                <td>-</td>
+            </tr>
+            <!-- Tambahkan baris lainnya di sini -->
+            <!-- Contoh: -->
+            <tr>
+                <td>3</td>
+                <td>Waldi</td>
+                <td>Mie Ayam Bakso</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp5.000.000</td>
+                <td>Rp1.500.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.487535,110.194718</td>
+            </tr>
+            <tr>
+                <td>4</td>
+            <td>Haris</td>
+            <td>Abon Ayam Bunda</td>
+            <td>Manufaktur (Makanan)</td>
+            <td>Rumah</td>
+            <td>Rp30.000.000</td>
+            <td>Rp12.000.000</td>
+            <td>4</td>
+            <td>Sudah</td>
+            <td>Sudah</td>
+            <td>-</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Hajah Mudrikah</td>
+                <td>Warung Mak Mud</td>
+                <td>Perdagangan</td>
+                <td>Ruko</td>
+                <td>Rp5.000.000</td>
+                <td>Rp1.000.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486862,110.194508</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Ratno</td>
+                <td>Warung Bu Ratno</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp5.000.000</td>
+                <td>Rp2.100.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486613,110.194783</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Umi</td>
+                <td>Umi Market</td>
+                <td>Perdagangan</td>
+                <td>Ruko</td>
+                <td>Rp20.000.000</td>
+                <td>Rp5.000.000</td>
+                <td>1</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486476,110.194950</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Dili</td>
+                <td>Toko Ibu Dili</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp50.000.000</td>
+                <td>Rp15.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Belum</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Casmiati Ningsih</td>
+                <td>Toko Azka</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp10.000.000</td>
+                <td>Rp12.000.000</td>
+                <td>1</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.483783,110.195200</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Nila Rahmaniati</td>
+                <td>Warung Ibu Nila</td>
+                <td>Sembako</td>
+                <td>Rumah</td>
+                <td>Rp2.000.000</td>
+                <td>Rp3.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484923,110.195448</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Nur Hayati</td>
+                <td>Warung Ibu Nur Hayati</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp1.200.000</td>
+                <td>Rp1.500.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484446,110.195044</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Romadhon</td>
+                <td>Abon Ayam Mak D'eni</td>
+                <td>Manufaktur (Makanan)</td>
+                <td>Rumah</td>
+                <td>Rp3.000.000</td>
+                <td>Rp12.000.000</td>
+                <td>1</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485564,110.194657</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Siti Khoiriyah</td>
+                <td>Warung Sitikom</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp100.000</td>
+                <td>Rp3.000.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484726,110.196351</td> 
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Sofiyah</td>
+                <td>Warung Kelontong</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp500.000</td>
+                <td>Rp3.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Belum</td>
+                <td>-</td> 
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Miftah</td>
+                <td>Abon Ayam Alfa</td>
+                <td>Manufaktur (Makanan)</td>
+                <td>Rumah</td>
+                <td>Rp5.000.000</td>
+                <td>Rp15.000.000</td>
+                <td>2</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.479780,110.192443</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Ayuni Amalia</td>
+                <td>Toko Isabela</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp400.000</td>
+                <td>Rp6.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485055,110.196481</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Ela</td>
+                <td>Warung Tiga Saudara</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp4.000.000</td>
+                <td>Rp7.000.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Belum</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Badawi</td>
+                <td>Toko Pak Badawi</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp10.000.000</td>
+                <td>Rp1.300.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485867,110.195247</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Siti</td>
+                <td>Nasi Goreng Bu Siti</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp4.000.000</td>
+                <td>Rp4.500.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.483809,110.195212</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Bapak Maftuh</td>
+                <td>Semprong Kelapa Gading</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp3.000.000</td>
+                <td>Rp2.100.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485165,110.194726</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Ibu Sri</td>
+                <td>Toko Ibu Sri</td>
+                <td>Perdagangan</td>
+                <td>Ruko</td>
+                <td>Rp5.000.000</td>
+                <td>Rp4.500.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486177,110.194381</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Rosa</td>
+                <td>Peyek Rosa</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp2.000.000</td>
+                <td>Rp400.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.487270,110.195028</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Dina</td>
+                <td>Seblak Prasmanan Dina</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp3.750.000</td>
+                <td>Rp6.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484373,110.196533</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Valco</td>
+                <td>Warung Kopi Valco</td>
+                <td>Makanan dan Minuman</td>
+                <td>Rumah</td>
+                <td>Rp1.000.000</td>
+                <td>Rp700.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484680,110.195870</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Zaenal Mustaqim</td>
+                <td>Terapi Cedera Olahraga, Bekam, dll</td>
+                <td>Jasa</td>
+                <td>Rumah</td>
+                <td>Rp10.000.000</td>
+                <td>Rp5.000.000</td>
+                <td>1</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484793,110.195570</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>De'Clean</td>
+                <td>Cuci Karpet dan Motor Sangubanyu</td>
+                <td>Jasa</td>
+                <td>Ruko</td>
+                <td>Rp20.000.000</td>
+                <td>Rp8.500.000</td>
+                <td>4</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484258,110.195351</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Pak Irfan</td>
+                <td>Bibit Lele</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp8.000.000</td>
+                <td>Rp4.700.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485894,110.196723</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Madu</td>
+                <td>Madu Tawon Liar</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp2.000.000</td>
+                <td>Rp2.500.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486186,110.193533</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Yufa</td>
+                <td>Yufa Snack (Grosir)</td>
+                <td>Perdagangan</td>
+                <td>Ruko</td>
+                <td>Rp5.000.000</td>
+                <td>Rp3.000.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486162,110.193318</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Kedai Kopi</td>
+                <td>Kedai Nawang Kopi</td>
+                <td>Minuman dan Makanan</td>
+                <td>Ruko</td>
+                <td>Rp20.000.000</td>
+                <td>Rp8.000.000</td>
+                <td>4</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486737,110.195335</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Nirisna</td>
+                <td>Nirisna Kitchen</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp4.500.000</td>
+                <td>Rp5.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485656,110.193462</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Abon Ayam</td>
+                <td>Abon Dua Putri</td>
+                <td>Manufaktur (Makanan)</td>
+                <td>Rumah</td>
+                <td>Rp15.000.000</td>
+                <td>Rp20.000.000</td>
+                <td>4</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485349,110.196083</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Abon Ayam</td>
+                <td>Abon Super Tunggal Roso</td>
+                <td>Manufaktur (Makanan)</td>
+                <td>Rumah</td>
+                <td>Rp12.000.000</td>
+                <td>Rp25.000.000</td>
+                <td>4</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485011,110.195997</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>Utomo</td>
+                <td>Kios Utomo</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp20.000.000</td>
+                <td>Rp50.000.000</td>
+                <td>2</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484738,110.195028</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>Satriany</td>
+                <td>Satriany Fish</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp6.000.000</td>
+                <td>Rp5.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484634,110.196384</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>Abah</td>
+                <td>Abon Ayam Abah</td>
+                <td>Manufaktur (Makanan)</td>
+                <td>Rumah</td>
+                <td>Rp8.000.000</td>
+                <td>Rp10.000.000</td>
+                <td>2</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484729,110.196606</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>Fitri</td>
+                <td>Abon Ayam Fitri</td>
+                <td>Manufaktur (Makanan)</td>
+                <td>Rumah</td>
+                <td>Rp2.000.000</td>
+                <td>Rp10.000.000</td>
+                <td>1</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484996,110.196989</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>Sugeng Mushodiq</td>
+                <td>Raja Puring Sugeng Mushodiq</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp8.500.000</td>
+                <td>Rp5.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485160,110.197263</td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>Toko Kaca dan Cermin</td>
+                <td>SRV Glass</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp20.000.000</td>
+                <td>Rp10.000.000</td>
+                <td>3</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484891,110.196482</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>Seblak</td>
+                <td>Seblak Jeletot</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp1.000.000</td>
+                <td>Rp700.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485124,110.196939</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>Nomo</td>
+                <td>Nomo Kandang Sapi</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp50.000.000</td>
+                <td>Rp90.000.000</td>
+                <td>1</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485860,110.197326</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>Rega</td>
+                <td>Pecel Lele Ayam & Bebek Goreng Rega</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp4.000.000</td>
+                <td>Rp3.000.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485910,110.195172</td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>Nita</td>
+                <td>Nita Salon</td>
+                <td>Jasa</td>
+                <td>Rumah</td>
+                <td>Rp10.000.000</td>
+                <td>Rp5.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486174,110.194934</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>Toko Mainan</td>
+                <td>Toko Kelontong</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp5.000.000</td>
+                <td>Rp3.500.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485450,110.195593</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>Mie Ayam</td>
+                <td>Mie Ayam Bakso</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp3.500.000</td>
+                <td>Rp3.000.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486357,110.195007</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>Pak Ali</td>
+                <td>Ternak Merpati Pak Ali</td>
+                <td>Perdagangan</td>
+                <td>Rumah</td>
+                <td>Rp1.500.000</td>
+                <td>Rp1.800.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486223,110.195797</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>Abon Ayam</td>
+                <td>Abon Ayam Tiga Saudara</td>
+                <td>Manufaktur (Makanan)</td>
+                <td>Rumah</td>
+                <td>Rp7.000.000</td>
+                <td>Rp10.000.000</td>
+                <td>2</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485655,110.196810</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>Pak Dol</td>
+                <td>Mandiri Motor (Bengkel Pak Dol)</td>
+                <td>Jasa</td>
+                <td>Ruko</td>
+                <td>Rp8.000.000</td>
+                <td>Rp4.000.000</td>
+                <td>3</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.484402,110.195688</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>Nurul</td>
+                <td>Warung Kelontong Bu Nurul's</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp4.000.000</td>
+                <td>Rp2.500.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485370,110.195093</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>Tamara</td>
+                <td>Penjahit Tamara Modiste</td>
+                <td>Jasa</td>
+                <td>Rumah</td>
+                <td>Rp3.000.000</td>
+                <td>Rp1.200.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.483979,110.195865</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>Alfajar</td>
+                <td>Mie Ayam & Bakso ALFAJAR</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp4.000.000</td>
+                <td>Rp1.500.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486132,110.194938</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>Nurchamid</td>
+                <td>Pangkas Rambut Pantes</td>
+                <td>Jasa</td>
+                <td>Ruko</td>
+                <td>Rp30.000.000</td>
+                <td>Rp5.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485568,110.194874</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>Seserahan</td>
+                <td>Jasa Mempercantik Hantaran</td>
+                <td>Jasa</td>
+                <td>Rumah</td>
+                <td>Rp5.000.000</td>
+                <td>Rp3.000.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.485533,110.194917</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>Shoehari</td>
+                <td>Shoehari Servis</td>
+                <td>Jasa</td>
+                <td>Rumah</td>
+                <td>Rp15.000.000</td>
+                <td>Rp6.200.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486007,110.194712</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>Bakso</td>
+                <td>Bakso Likemom</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp3.500.000</td>
+                <td>Rp2.200.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486451,110.194386</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>Agus</td>
+                <td>Agus Trans Agen Sewa Mobil</td>
+                <td>Perdagangan</td>
+                <td>Ruko</td>
+                <td>Rp200.000.000</td>
+                <td>Rp13.000.000</td>
+                <td>1</td>
+                <td>Sudah</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486308,110.194262</td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>Mbak Mudah</td>
+                <td>Warung Mbak Mudah</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp6.000.000</td>
+                <td>Rp3.200.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486388,110.194106</td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>Habib</td>
+                <td>Cindy Omah</td>
+                <td>Jasa</td>
+                <td>Rumah</td>
+                <td>Rp7.000.000</td>
+                <td>Rp10.000.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.487214,110.194370</td>
+            </tr>
+            <tr>
+                <td>59</td>
+                <td>Rino Irwansyah</td>
+                <td>Bengkel Motor Putra Tunggal</td>
+                <td>Jasa</td>
+                <td>Ruko</td>
+                <td>Rp50.000.000</td>
+                <td>Rp7.500.000</td>
+                <td>2</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486007,110.194712</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>Nur Sayur</td>
+                <td>Seblak Sami Laris</td>
+                <td>Makanan</td>
+                <td>Rumah</td>
+                <td>Rp3.000.000</td>
+                <td>Rp1.500.000</td>
+                <td>1</td>
+                <td>Belum</td>
+                <td>Sudah</td>
+                <td class="coordinates">-7.486022,110.195500</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(".bg-loader").hide();
+    });
+
+    function searchTable() {
+        var input, filter, table, tr, td, i, j, txtValue;
+        input = document.getElementById("searchInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("umkmTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (i = 1; i < tr.length; i++) {
+            tr[i].style.display = "none";
+            td = tr[i].getElementsByTagName("td");
+            for (j = 0; j < td.length; j++) {
+                if (td[j]) {
+                    txtValue = td[j].textContent || td[j].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+            var coords = document.querySelectorAll('.coordinates');
+            coords.forEach(function(coord) {
+                var coordinates = coord.textContent.trim();
+                if (coordinates && coordinates !== '-') {
+                    var link = document.createElement('a');
+                    link.href = `https://www.google.com/maps?q=${coordinates}`;
+                    link.target = '_blank';
+                    link.textContent = coordinates;
+                    coord.innerHTML = '';
+                    coord.appendChild(link);
+                }
+            });
+        });
+</script>
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<small>Copyright &copy; 2024 - TIM KKN UNNES. All Rights Reserved.</small>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".bg-loader").hide();
+		})
+	</script>
+</body>
+</html>
